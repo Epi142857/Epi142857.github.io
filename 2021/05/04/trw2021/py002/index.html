@@ -16,7 +16,7 @@
 
 
 
-<title>MySQL | The collection for S.C.</title>
+<title>【慈策/all策】菁菁者莪 | The collection for S.C.</title>
 
 
 
@@ -125,8 +125,56 @@
             
                 
                     <span class="post-tag">
-                        <a href="/tags/mysql/">
-                            mysql
+                        <a href="/tags/%E7%91%9C%E7%AD%96/">
+                            瑜策
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/all%E7%AD%96/">
+                            all策
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%90%8C%E4%BA%BA%E5%88%9B%E4%BD%9C-%E6%96%87/">
+                            同人创作-文
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E7%9F%AD%E7%AF%87/">
+                            短篇
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%AE%8C%E7%BB%93/">
+                            完结
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/LOFTER/">
+                            LOFTER
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/R18/">
+                            R18
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E6%85%88%E7%AD%96/">
+                            慈策
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Pyaemia/">
+                            Pyaemia
                         </a>
                     </span>    
                            
@@ -135,60 +183,29 @@
         <div class="post-title">
             
             
-                MySQL
+                【慈策/all策】菁菁者莪
             
             
         </div>
         <span class="post-date">
-            5月 4, 2022
+            5月 4, 2021
         </span>
     </div>
     <div class="post-img">
         
-            <img src="/../images/lufei.jpg" alt="featured_image">
+            <div class="h-line-primary"></div>
               
     </div>
 </div>
     <div class="post-content">
-    <h1 id="《MySQL技术精粹：架构、高级特性、型能优化与集群实战》"><a href="#《MySQL技术精粹：架构、高级特性、型能优化与集群实战》" class="headerlink" title="《MySQL技术精粹：架构、高级特性、型能优化与集群实战》"></a>《MySQL技术精粹：架构、高级特性、型能优化与集群实战》</h1><h2 id="第一章-MySQL-架构介绍"><a href="#第一章-MySQL-架构介绍" class="headerlink" title="第一章 MySQL 架构介绍"></a>第一章 MySQL 架构介绍</h2><h3 id="1-1-MySQL-架构"><a href="#1-1-MySQL-架构" class="headerlink" title="1.1 MySQL 架构"></a>1.1 MySQL 架构</h3><p>MySQL 服务器 &#x3D; SQL 层 + 存储引擎层</p>
-<p>SQL 层：</p>
-<ul>
-<li>权限判断</li>
-<li>SQL 解析</li>
-<li>SQL 查询</li>
-</ul>
-<p>存储引擎层：完成底层数据库数据存储操作</p>
-<p>MySQL 各模块特点：</p>
-<ol>
-<li>【连接&#x2F;线程处理】客户端连接 MySQL 数据库，主要用来处理客户端的请求、身份验证和数据库安全性验证</li>
-<li>【查询缓存和查询分析器】是 SQL 层的核心部分，主要涉及查询的解析、优化、缓存，以及所有内置的函数，存储过程，触发器，视图等功能</li>
-<li>【优化器】负责存储和获取所有存储在 MySQL 中的数据</li>
-</ol>
-<span id="more"></span>
-
-<h4 id="1-1-1-MySQL-物理文件的组成"><a href="#1-1-1-MySQL-物理文件的组成" class="headerlink" title="1.1.1 MySQL 物理文件的组成"></a>1.1.1 MySQL 物理文件的组成</h4><blockquote>
-<p>日志文件、数据文件和其他文件</p>
+    <blockquote>
+<p><strong>作者：</strong>Pyaemia<br><strong>约稿方：</strong>今天磕到粮了吗_没有<br><strong>发布平台：</strong>LOFTER<br><strong>链接：</strong><a target="_blank" rel="noopener" href="https://2quxianxingshi.lofter.com/post/4b7d1c08_2b46c9519">https://2quxianxi.com</a></p>
 </blockquote>
-<ol>
-<li><p>日志文件：记录了数据库操作信息和错误信息。常用的日志文件包括错误日志、二进制日志、查询日志、慢查询日志和 InnoDB 引擎在线 Redo 日志</p>
-<ol>
-<li>错误日志（Error Log）：记录了 MySQL Server 运行过程中遇到的所有严重的错误信息，以及 MySQL 每次启动和关闭的详细信息。默认关闭</li>
-<li>二进制日志（Binary Log）：即常说的 binlog。记录了 MySQL 所有修改数据库的操作，以二进制的形式记录在日志文件中，其中还包括每条语句所执行的时间和所消耗的资源以及相关的事务信息</li>
-<li>查询日志（Query Log）：记录所有的查询操作</li>
-<li>慢查询日志（Slow Query Log）：只所有 SQL 执行的时间超过 long_query_time 变量的语句和达到 min_examined_row_limit 条距离的语句。查看慢查询日志可以采用 mysqldumpslow 命令对慢查询日志进行分析</li>
-<li>InnoDB 引擎在线 Redo 日志：记录 InnoDB 所做的所有物理变更和事务信息。通过 Redo 日志和 Undo 信息，InnoDB 大大地加强了事务的安全性。默认存放在 data 目录下</li>
-</ol>
-</li>
-<li><p>数据文件：不同的数据库引擎，每个表的扩展名不一样，如 MyISAM 引擎用“.MYD” 作为扩展名，InnoDB 引擎使用“.idb” 作为扩展名等</p>
-<ol>
-<li>.frm 文件：存放与表相关的数据信息，包括表结构定义信息。当数据库奔溃时，用户可以通过 frm 文件来回复数据表结构</li>
-<li>.MYD 文件：MyISAM 存储引擎创建表时，每个 MyISAM 类型的表都会有一个“.MYD”文件与之对应。用于存放数据表的数据文件</li>
-<li>.MYI 文件：对于 MyISAM 存储引擎来说，用于存储表数据文件中任何索引的数据树</li>
-<li>.idb 文件和 .ibdata 文件：用于存储 InnoDB 存储引擎的数据，主要包括索引信息</li>
-</ol>
-</li>
-</ol>
-<p>p41</p>
+<h3 id="SUMMARY"><a href="#SUMMARY" class="headerlink" title="SUMMARY"></a>SUMMARY</h3><p>太史慈一个人默默的开着夜车。</p>
+<p>他车上少有这么安静的时候，但凡车上人数大于等于二，尤其那个“二”是他家某位姓孙名策的老兄时，车舱内总会有言语之声，时而是些一本正经的规划与分析，时而是些闲言碎语满口跑火车，再不济，即使太史慈独个儿开车，也会用改装后的车载音响放些吵吵闹闹的乐曲。但眼下孙策大约是太累了，虽然先前硬撑着爬到前座，一副咱们一如既往的姿态，但尚未开出二里地，孙策难以控制地垂了两次头，最后还是歪在椅背边上，昏昏沉沉地睡过去，呼吸声绵长而平稳。</p>
+<p>路口碰到红灯。夜里变灯时间很长，太史慈挂了P档，给孙策仔细挝了挝毯子。下面就是孙策赤裸的双腿，什么都没穿，窗外路灯亮得晃眼，光线凉凉的刺进车舱内，即使是布料掀起短短的空当，也很难看不见那几道颇为新鲜但已经开始泛血点的指痕。</p>
+<p>太史慈不想去看，他单手搭着方向盘，假装认真地数红灯旁边的秒数，一秒一秒地敲出拍子，但过了半天，那指示灯才刚变成两位数，太史慈又忍不住侧头去瞧孙策。</p>
+<p>孙策从来不坐后排，这是个细微但足够讨人欢心的习惯，甚至不需要他有什么具体动作，单纯行车时眼角余光一撇就能看到个身影，对于握着方向盘的人而言，亦是令人愉快的事情。只有虞翻对此着实不满，怒急怼过孙策两回，说你这么大一人杵在前排就是给对家当靶子云云，孙策十动然拒，气得虞翻连夜给所有车都换完防弹玻璃贴单向膜。</p>
 
 </div> 
 
@@ -202,7 +219,7 @@
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/2022/05/16/mycat/">Prev</a>
+                    <a href="/2021/05/04/trw2021/py001/">Prev</a>
                 </div>
             
         </div>
@@ -210,7 +227,7 @@
             
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="/2021/12/25/react/">Next</a>  
+                  <a href="/2020/05/04/jq2020/jq001/">Next</a>  
                 </div>  
             
         </div>

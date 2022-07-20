@@ -16,7 +16,7 @@
 
 
 
-<title>MySQL | The collection for S.C.</title>
+<title>【瑜策】先给兄弟爽爽 | The collection for S.C.</title>
 
 
 
@@ -125,8 +125,44 @@
             
                 
                     <span class="post-tag">
-                        <a href="/tags/mysql/">
-                            mysql
+                        <a href="/tags/%E7%91%9C%E7%AD%96/">
+                            瑜策
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%90%8C%E4%BA%BA%E5%88%9B%E4%BD%9C-%E6%96%87/">
+                            同人创作-文
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E7%9F%AD%E7%AF%87/">
+                            短篇
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/%E5%AE%8C%E7%BB%93/">
+                            完结
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/LOFTER/">
+                            LOFTER
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/R18/">
+                            R18
+                        </a>
+                    </span>    
+                
+                    <span class="post-tag">
+                        <a href="/tags/Pyaemia/">
+                            Pyaemia
                         </a>
                     </span>    
                            
@@ -135,60 +171,35 @@
         <div class="post-title">
             
             
-                MySQL
+                【瑜策】先给兄弟爽爽
             
             
         </div>
         <span class="post-date">
-            5月 4, 2022
+            5月 4, 2021
         </span>
     </div>
     <div class="post-img">
         
-            <img src="/../images/lufei.jpg" alt="featured_image">
+            <div class="h-line-primary"></div>
               
     </div>
 </div>
     <div class="post-content">
-    <h1 id="《MySQL技术精粹：架构、高级特性、型能优化与集群实战》"><a href="#《MySQL技术精粹：架构、高级特性、型能优化与集群实战》" class="headerlink" title="《MySQL技术精粹：架构、高级特性、型能优化与集群实战》"></a>《MySQL技术精粹：架构、高级特性、型能优化与集群实战》</h1><h2 id="第一章-MySQL-架构介绍"><a href="#第一章-MySQL-架构介绍" class="headerlink" title="第一章 MySQL 架构介绍"></a>第一章 MySQL 架构介绍</h2><h3 id="1-1-MySQL-架构"><a href="#1-1-MySQL-架构" class="headerlink" title="1.1 MySQL 架构"></a>1.1 MySQL 架构</h3><p>MySQL 服务器 &#x3D; SQL 层 + 存储引擎层</p>
-<p>SQL 层：</p>
-<ul>
-<li>权限判断</li>
-<li>SQL 解析</li>
-<li>SQL 查询</li>
-</ul>
-<p>存储引擎层：完成底层数据库数据存储操作</p>
-<p>MySQL 各模块特点：</p>
-<ol>
-<li>【连接&#x2F;线程处理】客户端连接 MySQL 数据库，主要用来处理客户端的请求、身份验证和数据库安全性验证</li>
-<li>【查询缓存和查询分析器】是 SQL 层的核心部分，主要涉及查询的解析、优化、缓存，以及所有内置的函数，存储过程，触发器，视图等功能</li>
-<li>【优化器】负责存储和获取所有存储在 MySQL 中的数据</li>
-</ol>
-<span id="more"></span>
-
-<h4 id="1-1-1-MySQL-物理文件的组成"><a href="#1-1-1-MySQL-物理文件的组成" class="headerlink" title="1.1.1 MySQL 物理文件的组成"></a>1.1.1 MySQL 物理文件的组成</h4><blockquote>
-<p>日志文件、数据文件和其他文件</p>
+    <blockquote>
+<p><strong>作者：</strong>Pyaemia<br><strong>发布平台：</strong>LOFTER<br><strong>链接：</strong><a target="_blank" rel="noopener" href="https://2quxianxingshi.lofter.com/post/4b7d1c08_2b4cfbe4a">https://2quxianxi.com</a></p>
 </blockquote>
-<ol>
-<li><p>日志文件：记录了数据库操作信息和错误信息。常用的日志文件包括错误日志、二进制日志、查询日志、慢查询日志和 InnoDB 引擎在线 Redo 日志</p>
-<ol>
-<li>错误日志（Error Log）：记录了 MySQL Server 运行过程中遇到的所有严重的错误信息，以及 MySQL 每次启动和关闭的详细信息。默认关闭</li>
-<li>二进制日志（Binary Log）：即常说的 binlog。记录了 MySQL 所有修改数据库的操作，以二进制的形式记录在日志文件中，其中还包括每条语句所执行的时间和所消耗的资源以及相关的事务信息</li>
-<li>查询日志（Query Log）：记录所有的查询操作</li>
-<li>慢查询日志（Slow Query Log）：只所有 SQL 执行的时间超过 long_query_time 变量的语句和达到 min_examined_row_limit 条距离的语句。查看慢查询日志可以采用 mysqldumpslow 命令对慢查询日志进行分析</li>
-<li>InnoDB 引擎在线 Redo 日志：记录 InnoDB 所做的所有物理变更和事务信息。通过 Redo 日志和 Undo 信息，InnoDB 大大地加强了事务的安全性。默认存放在 data 目录下</li>
-</ol>
-</li>
-<li><p>数据文件：不同的数据库引擎，每个表的扩展名不一样，如 MyISAM 引擎用“.MYD” 作为扩展名，InnoDB 引擎使用“.idb” 作为扩展名等</p>
-<ol>
-<li>.frm 文件：存放与表相关的数据信息，包括表结构定义信息。当数据库奔溃时，用户可以通过 frm 文件来回复数据表结构</li>
-<li>.MYD 文件：MyISAM 存储引擎创建表时，每个 MyISAM 类型的表都会有一个“.MYD”文件与之对应。用于存放数据表的数据文件</li>
-<li>.MYI 文件：对于 MyISAM 存储引擎来说，用于存储表数据文件中任何索引的数据树</li>
-<li>.idb 文件和 .ibdata 文件：用于存储 InnoDB 存储引擎的数据，主要包括索引信息</li>
-</ol>
-</li>
-</ol>
-<p>p41</p>
+<h3 id="SUMMARY"><a href="#SUMMARY" class="headerlink" title="SUMMARY"></a>SUMMARY</h3><p>周瑜镇守巴丘时收到了封加急书信，被告知讨逆将军打猎途中中了仇家的毒箭，已昏迷月馀，生死难料。</p>
+<p>周瑜心乱如麻，跑死了两匹马星河赶回吴郡，远远地没见到城楼升起白幡才吐出一口气。</p>
+<p>他横冲直撞进吴侯府邸，仆役内侍纷纷拦他，说孙策先前放了话，除了两名医师，谁都不能入内，包括吴国太和孙权。</p>
+<p>府中谣言四起，有人说孙策其实早死了，那两名医师实则暗中与江北勾结；也有人说是毒箭射中了孙策面颊，他浑身皮肉溃烂，面目全非。后一种传言的源头是一个医官的学徒，他言之凿凿道，师父从内室出来后浑身都沾着脓血，臭不可闻，而吴侯平日甚看重自己这张俊脸，才打死不肯让人进去一睹真相。</p>
+<p>周瑜也顾不得那么多了，甚至连吴夫人的斥责都充耳不闻，推门就扎进那间十分冷清、又泛着苦涩药味的内室，反手把门插上，挡住外面纷乱噪音。</p>
+<p>他径直向卧榻走去，在最后一道屏障前驻足，敲了敲屏风的木框，放声道：伯符，是我，我来了。</p>
+<p>屏风后面那一团影子动了动，传来一阵模糊不清的声音，好像是让周瑜过去。</p>
+<p>周瑜走近，看那人竟然严严实实裹在锦被之中。现在天气已经很炎热，孙策这样怕被人看，第二种谣言的真实性恐怕又多了几分。但至少被子一起一落，里面的人在呼吸，还活着，这已经够好了。</p>
+<p>周瑜在榻角坐下，隔着被子轻轻拂了拂下面人的轮廓，问他，创口还很疼吗？有否伤到嗓子。</p>
+<p>被子边缘被撑起了一点，一只手的影子快速一闪，却是将周瑜的手给捉了进去，捂在被子里，往掌心上写字。周瑜当即闭上嘴不说话，仔细地猜对方用指尖勾勒的笔画。</p>
+<p>“箭上有毒，我的模样变了很多”，孙策这样写道。</p>
 
 </div> 
 
@@ -202,7 +213,7 @@
            
                 <div class="icon arrow-left"></div>
                 <div class="post-link">
-                    <a href="/2022/05/16/mycat/">Prev</a>
+                    <a href="/2021/05/04/trw2021/sm001/">Prev</a>
                 </div>
             
         </div>
@@ -210,7 +221,7 @@
             
                 <div class="icon arrow-right"></div>
                 <div class="post-link">
-                  <a href="/2021/12/25/react/">Next</a>  
+                  <a href="/2021/05/04/trw2021/py002/">Next</a>  
                 </div>  
             
         </div>
