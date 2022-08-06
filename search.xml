@@ -1548,4 +1548,70 @@
         <tag>LOFTER</tag>
       </tags>
   </entry>
+  <entry>
+    <title>使用指南</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<p>本站建立的初衷旨在帮助更多冷圈同好快速、便捷地找到自己心仪的同人作品及创作者。由于网页的框架采用了博客的形式，而我搭建时又不具备太多编程的基础，因此许多功能无法做到删繁就简，还请体谅。</p>
+<p>当您初次进入网站时，图片可能加载较慢。</p>
+<p>推荐使用移动端，浏览效果更佳。</p>
+<h2 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h2><p>您可以通过主页面直接到达使用说明。</p>
+<p>点击页面右上角打开菜单栏，里面包含“主页”、“标签”、“归档”、“展览”、“留言”五个板块，不同板块对应不同的页面，选择您希望到达的页面即可。</p>
+<p>假如您想知道网站是否有更新内容，可以拖动至页面最下方的页脚查看，我将会在那里标注最近一次的更新日期。</p>
+<h2 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h2><p>统共分为“原作”、“作者”、“CP”、“发布平台”、“作品分类（文or图）”几大类。碍于标签数量较多，功能受限无法排序且展示在同一页面上，您可能需要花费一定时间来查找需要的标签。</p>
+<p>三对及三对以上的CP出场作品额外标注“all”向标签，依据描写占比对除主要CP外的其余CP一律用“all”向标签进行替代。</p>
+<p>收录有极少部分无差及无CP作品，介意此请仔细查看标签。</p>
+<h2 id="归档"><a href="#归档" class="headerlink" title="归档"></a>归档</h2><p>全部的归档。<br>化用了时间轴功能，年份代表类别，不具有现实意义。</p>
+<p><strong>1997：</strong>相关史料<br><strong>2020：</strong>全文收录<br><strong>2021：</strong>作品地址指路<br><strong>2022：</strong>其他</p>
+<h2 id="展览"><a href="#展览" class="headerlink" title="展览"></a>展览</h2><p>归档含有图片的分类。</p>
+<h2 id="留言"><a href="#留言" class="headerlink" title="留言"></a>留言</h2><p>欢迎留言，也欢迎提出意见和建议。</p>
+<h2 id="版权"><a href="#版权" class="headerlink" title="版权"></a>版权</h2><p>该网站有且仅有的作用是充当跳板，因为新浪微博会屏蔽链接。如果您认为自己的权益受到了侵犯，请务必及时私信联系我，经沟通后我会删除或修改网站里的内容，并在您有需要的情况下发布说明。一切尊重创作者意愿。</p>
+<p>您可以通过以下方式联系到我：</p>
+<blockquote>
+<p><strong>联系方式</strong><br>微博：<a href="https://weibo.com/u/7366984136">https://weibo.com</a><br>乐乎：<a href="https://boob3.lofter.com/">https://lofter.com</a></p>
+</blockquote>
+<p>在此祝各位朋友使用愉快。</p>
+<p>2022.08.05</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>归档</title>
+    <url>/archives/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>留言</title>
+    <url>/comment/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>展览</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>留言</title>
+    <url>/comments/index.html</url>
+    <content><![CDATA[<p>欢迎大家留言噢~</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tag/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>展览</title>
+    <url>/categories/gallery/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Q&amp;A</title>
+    <url>/Q&amp;A/index.html</url>
+    <content><![CDATA[<h3 id="Q1、为什么决定建站"><a href="#Q1、为什么决定建站" class="headerlink" title="Q1、为什么决定建站"></a>Q1、为什么决定建站</h3><p>一开始我是在微博做了整理长图，并且投了一些相关bot，感觉还不错。后来更新的时候发现了问题。比如第一张整理了同人文，第二张整理了诗词，第三张整理了史料，但是如果后续再对新的同人文进行整理，如果想和之前的放在一起，就需要更改很多图片的序号和位置，非常麻烦，做不到有规整的分类。也有一些朋友反馈我说链接都放在图片里没办法直接跳转，必须截图提取文字，把链接提取出来之后再复制粘贴到浏览器，十分不方便。但是微博放外链又很容易被夹。因此我萌生了创建一个网站用来整理策右相关同人作品的想法。</p>
+<h3 id="Q2、建站的过程"><a href="#Q2、建站的过程" class="headerlink" title="Q2、建站的过程"></a>Q2、建站的过程</h3><p>七月初收到了一个瑜策同人企划的邀请，所以把建站的事搁置了。七月中旬因为写文没思路，就又捡起来了，然后一直摸摸索索到现在orz</p>
+<h3 id="Q3、网站算停车场吗"><a href="#Q3、网站算停车场吗" class="headerlink" title="Q3、网站算停车场吗"></a>Q3、网站算停车场吗</h3><p>也不算吧！虽然确实可以有停车场的作用，但是目前全文收录的很少，最主要的功能是拿来做跳转，方便大家找粮吃。只是增加传播途径，仅此而已，没有别的作用。相当于是一个目录。再次重申，如果有作者认为侵犯了自己的权益或者不希望自己的作品通过该形式传播，可以联系我对网站内容进行修改。毕竟建站的目的是希望同好们能开心吃饭。</p>
+<h3 id="Q4、整理作品时会参杂主观偏好吗"><a href="#Q4、整理作品时会参杂主观偏好吗" class="headerlink" title="Q4、整理作品时会参杂主观偏好吗"></a>Q4、整理作品时会参杂主观偏好吗</h3><p>众所周知，三国衍生作品既多且杂，不同的作品塑造出不一样的角色形象。在整理作品时，也能通过描写看出作者们对于同一个角色不同的理解。我没有了解过的三国衍生作品，不会主动去搜集整理。除此之外并没有什么整理的标准，单纯随缘。不过要说一点主观喜好都没参杂，也不现实。建站这事本身就是我主观的一个行为。无论如何，所有为爱发电的创作者都值得尊重。</p>
+<h3 id="Q5、关于网站有什么未来的想法"><a href="#Q5、关于网站有什么未来的想法" class="headerlink" title="Q5、关于网站有什么未来的想法"></a>Q5、关于网站有什么未来的想法</h3><p>暂时没有，以后可能会视情况开通收集隔空喊话bot内容和代餐文学内容的板块。但开通之前可能会征求身边一些亲友的意见。因为我本人不常逛隔空喊话bot。</p>
+]]></content>
+  </entry>
 </search>
